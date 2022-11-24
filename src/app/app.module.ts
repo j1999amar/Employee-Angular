@@ -29,6 +29,9 @@ const myRouter:Routes=[{
 {
   path:"view",
   component:ViewEmployeeComponent
+},{
+  path:"delete",
+  component:DeleteEmployeeComponent
 }]
 @NgModule({
   declarations: [
