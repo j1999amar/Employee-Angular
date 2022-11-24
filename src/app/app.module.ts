@@ -7,6 +7,10 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { AddEmployeeComponent } from './add-employee/add-employee.component';
 import { EditEmployeeComponent } from './edit-employee/edit-employee.component';
+import { SearchEmployeeComponent } from './search-employee/search-employee.component';
+import { DeleteEmployeeComponent } from './delete-employee/delete-employee.component';
+import { NavbarEmployeeComponent } from './navbar-employee/navbar-employee.component';
+import { ViewEmployeeComponent } from './view-employee/view-employee.component';
 const myRouter:Routes=[{
   path:"",
   component:LoginComponent
@@ -17,13 +21,25 @@ const myRouter:Routes=[{
 {
   path:"edit",
   component:EditEmployeeComponent
+},
+{
+  path:"search",
+  component:SearchEmployeeComponent
+},
+{
+  path:"view",
+  component:ViewEmployeeComponent
 }]
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     AddEmployeeComponent,
-    EditEmployeeComponent
+    EditEmployeeComponent,
+    SearchEmployeeComponent,
+    DeleteEmployeeComponent,
+    NavbarEmployeeComponent,
+    ViewEmployeeComponent
   ],
   imports: [
     BrowserModule,
