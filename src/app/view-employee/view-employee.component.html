@@ -1,70 +1,19 @@
 <app-navbar-employee></app-navbar-employee>
-<h1>{{name}}</h1>
-<h1>{{designation}}</h1>
-<h1>{{salary}}</h1>
-<h1>{{emailID}}</h1>
-<h1>{{company}}</h1>
-
-<!-- <table class="table">
-    <thead>
-      <tr>
-        <th scope="col">Code</th>
-        <th scope="col">Employee Name</th>
-        <th scope="col"> Designation</th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td scope="row">1</td>
-            <td colspan="1">Alex</td>
-            <td>Ceo</td>
-          </tr>
-      <tr>
-        <tr>
-            <th scope="row">2</th>
-            <td colspan="1">Hellboy</td>
-            <td>HR</td>
-          </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td colspan="1">Larry the Bird</td>
-        <td>Team Leader</td>
-      </tr>
-      <tr>
-        <th scope="row">4</th>
-        <td colspan="1">Jude</td>
-        <td>HR</td>
-      </tr>
-      <tr>
-        <th scope="row">5</th>
-        <td colspan="1">Martin</td>
-        <td>Devops</td>
-      </tr>
-      <tr>
-        <th scope="row">6</th>
-        <td colspan="1">Henry</td>
-        <td>HR</td>
-      </tr>
-      <tr>
-        <th scope="row">7</th>
-        <td colspan="1">Amarnath</td>
-        <td>Traine</td>
-      </tr>
-      <tr>
-        <th scope="row">8</th>
-        <td colspan="1">Sam</td>
-        <td>Testing</td>
-      </tr>
-      <tr>
-        <th scope="row">9</th>
-        <td colspan="1">Jack</td>
-        <td>Team Leader</td>
-      </tr>
-      <tr>
-        <th scope="row">10</th>
-        <td colspan="1">Lisa</td>
-        <td>Ceo</td>
-      </tr>
-
-    </tbody>
-  </table> -->
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Employee Name</th>
+      <th scope="col"> Designation</th>
+      <th scope="col">Salary</th>
+      <th scope="col">Company</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let i of data">
+      <td scope="row">{{i.name}} </td>
+      <td colspan="1">{{i.designation}}</td>
+      <td>{{i.salary}}</td>
+      <td>{{i.company}}</td>
+    </tr>
+  </tbody>
+</table>
