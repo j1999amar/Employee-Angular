@@ -3,33 +3,33 @@
     <div class="row">
         <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
             <h1>Add Employee</h1>
-            <div class="row g-3">
+            <div class="row g-3"> 
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12" >
                     <label for="" class="form-label">Employee Code</label>
-                    <input type="text" class="text form-control">
+                    <input  type="text" class="text form-control" name="code" [(ngModel)]="code" >
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12" >
                     <label for="" class="form-label">Employee Name</label>
-                    <input type="text" class="text form-control">
+                    <input type="text" class="text form-control" name="name" [(ngModel)]="name">
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12" >
                     <label for="" class="form-label">Designation</label>
-                    <input type="text" class="text form-control">
+                    <input  name="designation" [(ngModel)]="designation"type="text" class="text form-control">
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12" >
                     <label for="" class="form-label">Salary</label>
-                    <input type="text" class="text form-control">
+                    <input name="salary" [(ngModel)]="salary" type="text" class="text form-control">
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12" >
                     <label for="" class="form-label">Address</label>
-                    <textarea name="" id=""  rows="1" class="form-control"></textarea>
+                    <textarea name="address" [(ngModel)]="address" name="" id=""  rows="1" class="form-control"></textarea>
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12" >
                     <label for="" class="form-label">Date of Join</label>
-                    <input type="date" class="text form-control">
+                    <input name="dateofjoin" [(ngModel)]="dateofjoin" type="date" class="text form-control">
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12" >
-                    <button class="btn btn-primary">Add</button>
+                    <button (click)="readValue()" class="btn btn-primary">Add</button>
                 </div>
             </div>
            

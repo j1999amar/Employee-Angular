@@ -1,19 +1,24 @@
-<app-navbar-employee></app-navbar-employee>
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">Employee Name</th>
-      <th scope="col"> Designation</th>
-      <th scope="col">Salary</th>
-      <th scope="col">Company</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let i of data">
-      <td scope="row">{{i.name}} </td>
-      <td colspan="1">{{i.designation}}</td>
-      <td>{{i.salary}}</td>
-      <td>{{i.company}}</td>
-    </tr>
-  </tbody>
-</table>
+<div class="conatiner">
+  <div class="row">
+    <div class="col-12 col-sm-12 col-md-12 col-lg-2 col-xl-12 col-xxl-12">
+      <table class="table">
+        <thead>
+          <tr  >
+            <th scope="col">User ID</th>
+            <th scope="col"> ID </th>
+            <th scope="col">Title</th>
+            <th scope="col">Complete Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let i of data" >
+            <td scope="row">{{i.userId}} </td>
+            <td colspan="1">{{i.id}}</td>
+            <td>{{i.title}}</td>
+            <td>{{i.completed}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
